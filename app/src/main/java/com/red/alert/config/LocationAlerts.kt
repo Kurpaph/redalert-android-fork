@@ -1,9 +1,11 @@
-package com.red.alert.config;
+package com.red.alert.config
 
-public class LocationAlerts {
+object LocationAlerts {
     // Max distance (in km) that can be configured for location-based alerts
-    public static int MAX_DISTANCE_KM = 50;
+    @JvmField
+    var MAX_DISTANCE_KM = 50
 
     // Max polling frequency for location-based alerts (higher value is less reliable but conserves more battery)
-    public static int MAX_FREQUENCY_MINUTES = 60;
+    @JvmField
+    var MAX_FREQUENCY_MINUTES = 60
 }
